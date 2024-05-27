@@ -8,3 +8,37 @@
 - 간결성
 - 표현성
 - 자바와 상호 운용성
+
+### 간결성
+- 코틀린은 코드를 간결하게 작성할 수 있도록 설계되었다.
+
+```kotlin
+    data class User(val name: String, val age: Int)
+
+    val user = User("KiBong", 30)
+    val user1 = User("KiBong", 30)
+    println(user.age.toString())
+    println(user.name.equals("KiBong"))
+    println(user.hashCode().compareTo(user1.hashCode()))
+
+```
+
+### 표현성
+- 더 읽기 쉽고 이해하기 쉬운 코드를 작성 가능
+```kotlin
+  when (user.age) {
+        1 -> println("미성년자")
+        2 -> println("성인")
+        else -> println("노인")
+    }
+```
+### Java와 상호 운용성
+- 코틀린은 100% 호환되기 때문에 Java와 쉽게 상호 운용이 가능하다.
+
+```kotlin
+fun getList(): List<String> = listOf("Kibong", "Kotlin", "Java")
+
+//Java
+List<String> list = KotlinTestKt.getList();
+```
+
