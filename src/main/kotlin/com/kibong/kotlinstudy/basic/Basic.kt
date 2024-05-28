@@ -42,12 +42,15 @@ fun dataType() {
     val user2 = User("Kibong", 28)
 
     //타입 비교 방법
-    println(noType::class.simpleName)
+    println(noType::class.simpleName) // 자동적으로 형변환을 한다.
     println(int.toLong() == long)
     println(float.toDouble() == double)
     println(string == compareString)
     println(user == user1)
+    println(user === user1)
     println(user == user2)
+
+
 
 
 
