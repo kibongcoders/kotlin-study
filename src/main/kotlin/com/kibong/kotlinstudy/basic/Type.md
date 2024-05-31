@@ -92,3 +92,51 @@ fun fail(message: String): Nothing {
 }
 ```
 
+## String interpolation / String Indexing
+
+### String interpolation
+
+- 문자열 내부에 변수를 삽입할 때 사용
+- $를 사용하여 변수를 삽입
+
+```kotlin
+val name = "KiBong"
+println("My name is $name")
+```
+- 중괄호를 생략 가능
+
+```kotlin
+val name = "KiBong"
+println("My name is $name")
+```
+- 중괄호를 생략 가능하더라도 ${문자열} 로 써주는 것이 가독성이 좋다.
+- 가독성, 일괄 변환, 정규식에 활용
+------------------
+- """"""를 사용하여 여러줄의 문자열을 사용할 수 있다.
+- 변수를 삽입할 수 있다.
+```kotlin
+val name = "KiBong"
+val text =
+"""
+    Tell me and I forget.
+    Teach me and I remember.
+    Involve me and I learn.
+    (${name})
+"""
+println(text)
+```
+
+### String Indexing
+- Java와 동일하게 문자열을 인덱싱하여 사용할 수 있다.
+- 문자열의 길이는 length를 사용하여 구할 수 있다.
+```kotlin
+val text = "Hello"
+println(text[0]) // H
+println(text[1]) // e
+println(text[2]) // l
+println(text[3]) // l
+println(text[4]) // o
+println(text.length) // 5
+```
+
+
