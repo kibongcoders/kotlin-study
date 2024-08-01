@@ -2,9 +2,14 @@ package com.kibong.kotlinstudy.basic
 
 fun main() {
     //main 함수로 코드를 실행할 수 있다.
-    println("Hello, Kotlin!")
-    valAndVar()
-    dataType()
+//    println("Hello, Kotlin!")
+//    valAndVar()
+//    dataType()
+
+    val n = 15
+
+    val result = n shl 2 shl 1
+    println(result)
 }
 
 // Kotlin에서 val 키워드를 통해 불변 변수를 선언
